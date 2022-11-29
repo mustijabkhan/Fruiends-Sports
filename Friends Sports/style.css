@@ -1,0 +1,349 @@
+
+{
+    --txt-clr1: #000;
+    --txt-clr2: #fff;
+    --hvr-txt-clr: #ffc915;
+    --background-clr: #f5f5f5;
+    --label-clr: #21B9D3;
+    --phone-price: #e6462e;
+}
+body{
+    background-color: green;
+}
+
+/* webpage body styles */
+*{
+    font-family: SF Pro SC, SF Pro Display, PingFang SC, Helvetica Neue, Helvetica, "Segoe UI", SegoeUI, Arial, sans-serif;
+    margin: 0;
+}
+  
+
+
+/* navbar start */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+}
+.navbar-txt a{
+    color: #fff;
+    text-decoration: none;
+    margin: 30px 30px;
+}
+.navbar-txt a:hover{
+    color: var(--hvr-txt-clr);
+}
+
+/* navbar end */
+
+
+/* banner start */
+.banner-wrapper{
+    background: url(./imges/Return_of_Sports123.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.banner-container{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 0px 40px;
+}
+.banner-hd{
+    margin: 15px 0px;
+    font-size: 3rem;
+}
+.banner-sub-hd{
+    margin: 10px 0px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.banner-txt{
+    line-height: 1.5rem;
+}
+.banner-btn{
+    margin: 20px 0px;
+    padding: 10px 20px;
+    color: var(--txt-clr2);
+    background: transparent;
+    border: 1px solid var(--txt-clr2);
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.banner-btn:hover{
+    background-color: var(--txt-clr2);
+    color: var(--txt-clr1);
+}
+
+/* banner end */
+
+/* phone section start */
+
+.cricket-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px repeat(3, 380px);
+    color: #fff;
+}
+.cricket-lft{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+.cricket-hd{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+    justify-self: flex-start;
+}
+.cricket-lft {
+    font-size: 1.3;
+    margin-top: 40px;
+
+}
+
+
+.cricket-More{
+    font-weight: lighter;
+    font-size: 16px !important;
+    opacity: .9;
+}
+.phone-img{
+    width: 220px;
+}
+.box-wrapper{
+    background-color: antiquewhite; 
+    margin: 30px 20px;
+    gap: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(228, 228, 228);
+    padding: 90px 0px;
+    transition: .2s linear;
+    cursor: pointer;
+}
+.box-label{
+    background-color: var(--label-clr);
+    color: black;
+    width: 40px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 20px;
+    margin: 0px 0px 20px 0px;
+}
+.box-hd{
+    color: gray;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+}
+.box-txt{
+    color: gray;
+}
+
+.box-price{
+    color: gray;
+    font-weight: 700;
+}
+.box-cutprice{
+    font-size: .9rem;
+    color: var(--txt-clr1);
+    opacity: .6;
+    text-decoration: line-through;
+}
+
+.box-wrapper:hover{
+    transform: translateY(2px);
+}
+
+/* phone section end */
+
+/* .accessories section start */
+
+.accessories-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px repeat(3, 380px);
+    color: #fff;
+
+
+}
+
+.accessories-lft{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+.accessories-hd{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+    justify-self: flex-start;
+}
+.accessories-lft .accessories-hd{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.accessories-lft .audio{
+    font-weight: 700;
+    position: relative;
+}
+.audio::after{
+    content: " ";
+    display: block;
+    background-color: #000;
+    width: 30px;
+    position: absolute;
+    left: 15%;
+    margin-top: 4px;
+    height: 2px;
+}
+.accessories-box-wrapper{
+    background-color: var(--txt-clr2); 
+    margin: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(228, 228, 228);
+    padding: 50px 0px;
+    transition: .2s linear;
+    cursor: pointer;
+    background-color:lightgoldenrodyellow
+}
+.accessories-img{
+    width: 220px;
+    height: 220px;
+}
+
+.accessories-box-hd{
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 20px;
+    color:gray;
+    
+}
+.accessories-box-txt{
+    opacity: .6;
+    line-height: 50px;
+    color:gray;
+
+}
+.accessories-box-wrapper:hover{
+    transform: translateY(2px);
+
+}
+
+/* .accessories section end */
+
+.button{
+    text-align: center;
+    margin: 0px 40px;
+   
+    
+    
+}
+.more-button{
+    width: 200px;
+    height: 50px;
+    font-family: Montserrat;
+    font-size: 40px;
+    color: darkgrey;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s linear;
+    margin-bottom: 20px;
+    border-style: hidden ;
+    animation : animate 2 linear infinite;
+
+}
+
+
+
+/* ***************Footer Section Start*************** */
+
+.footer{
+    background-color: black;
+    margin-top: 30px;
+    padding: 80px;
+}
+
+.main-footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.footer-sec-txt-wrapper{
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+}
+.footer-sec-hd{
+    font-weight: 700px;
+    color:darkgrey;
+    font-size: 25px;
+    
+}
+.footer-sec-txt-wrapper a{
+    color: var(--txt-clr1);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 0px;
+    transition: .2s linear;
+}
+.footer-sec-txt-wrapper a:hover{
+    color: var(--hvr-txt-clr);
+}
+
+
+.footer-bottom-border{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+}
+.footer-bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.footer-sec5{
+    text-align: center;
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-icons i{
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-align: center;
+}
+.footer-icns-bg{
+    color: #ffff;
+    background-color: var(--txt-clr1);
+    padding: 5px;
+    border-radius: 50%;
+}
+.footer-icons .footer-icns-bg{
+    font-size: 1.2rem;
+}
+
+/* ***************Footer Section end*************** */
+
+
+
+
+
